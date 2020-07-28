@@ -1,0 +1,80 @@
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../Images/backgrounds/team.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: "Avenir", sans-serif;
+  padding: 5%;
+}
+
+#team > h1 {
+  color: white;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#team > h2 {
+  color: white;
+  margin-bottom: 5%;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#team > svg:hover {
+  cursor: pointer;
+}
+
+#team > svg path {
+  transition: fill 0.5s ease-in-out;
+  fill: white;
+  stroke: transparent;
+  stroke-width: 20px;
+}
+
+#team #teamMap {
+  transform: matrix(1.25, 0, 0, -1.25, 0, 625.25) scale(calc(0.5), calc(0.5));
+}
+
+#team > button {
+  transition: opacity 0.5s ease-in-out;
+  background-color: white;
+  border: none;
+  padding: 1% 2.5%;
+  border-radius: 1vw;
+  font-size: 1vw;
+  width: 15vw;
+  font-family: "Avenir", Arial;
+    opacity: 0.9;
+}
+
+#team > button:hover {
+    background-color: #891404;
+  cursor: pointer;
+  opacity: 0.7;
+    color: white;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 1000px) {
+  #team svg {
+    width: 472.5px;
+    height: 281.3625px;
+  }
+
+  #team #teamMap {
+    transform: matrix(1.25, 0, 0, -1.25, 0, 281.3625) scale(0.225);
+  }
+
+  #team > button {
+    font-size: 2vw;
+  }
+}

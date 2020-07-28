@@ -1,0 +1,91 @@
+.panel {
+  transition: opacity 0.5s ease-in-out;
+  visibility: hidden;
+  background-color: #881103;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 70vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  opacity: 0;
+  color: white;
+  box-shadow: 0 0 5px 5px #202020;
+}
+
+.panel > h1 {
+  margin: 0;
+  padding: 2% 2.5%;
+  background-color: firebrick;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel > h1 > button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.panel > h1 > button:hover {
+  cursor: pointer;
+}
+
+.panel > .director {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+  height: 150px;
+  padding: 2.5%;
+}
+
+.panel > .director > img {
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2.5px #202020;
+}
+
+.panel > .director > .content {
+  flex-direction: column;
+  display: flex;
+  padding: 0 5px;
+  justify-content: center;
+}
+
+.panel > .director > .content > h1 {
+  font-size: 2vw;
+  margin: 0;
+}
+
+.panel > .director > .content > h1 > a > img {
+  width: 25px;
+}
+
+.panel > .director > .content > label {
+  font-size: 1.25vw;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .panel {
+    width: 90%;
+  }
+
+  .panel > h1 {
+    font-size: 4vw;
+  }
+
+  .panel > .director > .content > h1 {
+    font-size: 4vw;
+  }
+
+  .panel > .director > .content > label {
+    font-size: 2vw;
+  }
+}

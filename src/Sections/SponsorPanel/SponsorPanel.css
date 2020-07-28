@@ -1,0 +1,98 @@
+#sponsorPanel {
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#sponsorPanel > #panel {
+  background-color: maroon;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 45%;
+  border-radius: 1vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  box-shadow: 0 0 5px 5px black;
+}
+
+#sponsorPanel > #panel > h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir';
+    
+}
+
+#sponsorPanel > #panel > label {
+  color: white;
+  font-size: 1.5vw;
+  margin: 0 2.5%;
+        text-align: center;
+    justify-content: center;
+    align-items: center;
+        font-family: 'Avenir';
+}
+
+#sponsorPanel > #panel > div {
+  width: 80%;
+  color: white;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#sponsorPanel > #panel > div > a:hover {
+  cursor: pointer;
+}
+
+#sponsorPanel > #panel > a {
+  transition: background-color 0.5s ease-in-out;
+  width: 25%;
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+  padding: 2.5%;
+  border: 1px solid white;
+  border-radius: 3vw;
+        font-family: 'Avenir';
+}
+
+#sponsorPanel > #panel > a:hover {
+  cursor: pointer;
+  background-color: #6925258f;
+}
+
+@media screen and (max-width: 1000px) {
+  #sponsorPanel > #panel {
+    width: 90%;
+    padding: 5% 1%;
+  }
+  #sponsorPanel > #panel > h1 {
+    font-size: 10vw;
+  }
+
+  #sponsorPanel > #panel > label {
+    font-size: 4vw;
+  }
+
+  #sponsorPanel > #panel > a {
+    font-size: 2.5vw;
+  }
+}

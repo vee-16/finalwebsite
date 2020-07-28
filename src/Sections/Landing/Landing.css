@@ -1,0 +1,21 @@
+#landing {
+  background-image: url(../../Images/backgrounds/landing.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#landing > img {
+  height: 50%;
+  user-select: none;
+}
+
+#landing > label {
+  color: white;
+  font-style: italic;
+  font-size: 2.5vw;
+}

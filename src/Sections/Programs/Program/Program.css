@@ -1,0 +1,112 @@
+.program {
+  font-family: "Avenir", sans-serif;
+  transition: background-size 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vw;
+  flex-basis: 33%;
+  background-size: 400%;
+  color: white;
+  font-size: 3vw;
+  outline: none;
+  border: none;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+}
+
+.program:hover {
+  cursor: pointer;
+  background-size: 200%;
+}
+
+.program h1 {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  margin: 0;
+  font-size: 2.5vw;
+  font-weight: 400;
+  color: transparent;
+  display: none;
+}
+
+.program img {
+  transition: opacity 0.5s ease-in-out;
+  width: 75%;
+}
+
+.program > .description {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  display: none;
+  color: transparent;
+  pointer-events: none;
+  font-size: 1.5vw;
+  text-align: left;
+  align-items: center;
+  justify-content: top;
+}
+
+.program > .indicator,
+.program > i {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  pointer-events: none;
+}
+
+.program > .more {
+  transition: background-color 0.5s ease-in-out;
+  background-color: transparent;
+  color: white;
+  border-radius: 0.5vw;
+  border: 1px solid white;
+  background-color: #69252500;
+  font-size: 1vw;
+  padding: 1% 2.5%;
+  display: none;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  text-decoration: none;
+}
+
+.program > .more:hover {
+  background-color: #6925258f;
+}
+
+.program > .more > i {
+  font-size: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+  .program {
+    width: 75%;
+    background-size: 100%;
+  }
+
+  .program:hover {
+    background-size: 100%;
+  }
+
+  .program > .indicator {
+    font-size: 2vw;
+  }
+
+  .program > .description {
+    font-size: 2vw;
+  }
+
+  .program > img {
+    width: 30%;
+  }
+
+  .program > .more {
+    font-size: 1.5vw;
+  }
+}

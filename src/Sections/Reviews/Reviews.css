@@ -1,0 +1,76 @@
+#reviews {
+  background-image: url(./reviews.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Avenir", sans-serif;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 5% 0;
+  position: relative;
+}
+
+#reviews > h1 {
+  color: white;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#reviews > h2 {
+  color: white;
+  margin-bottom: 5%;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#reviews > .list {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#reviews > .list > button {
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+  text-decoration: none;
+  font-size: 4vw;
+  background-color: transparent;
+  height: 4vw;
+  width: 4vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-basis: 5%;
+  border-radius: 50%;
+  user-select: none;
+  border: none;
+}
+
+#reviews > .list > button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+#reviews > .list > .carousel {
+  flex-basis: 85%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  box-shadow: 0 0 15px 5px var(--main-bg-color);
+}
+
+#reviews > .reviews::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #reviews {
+    background-image: url("../../Images/backgrounds/reviews-mobile.png");
+  }
+}
